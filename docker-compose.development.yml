@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    container_name: 'suomidev-postgres'
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USERNAME: postgres
+      POSTGRES_DB: 'suomidev_development'
+    ports:
+      - 5432:5432
